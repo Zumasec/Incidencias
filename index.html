@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="style/css.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"  crossorigin="anonymous">
+
+    <title>Incidencias</title>
+</head>
+<body style="background-color: rgba(5, 5, 5, 0.767); ">
+        
+    <div class="contenedor" style="color:  4em;text-align: center">
+            <h1 style="color: white; " >Comunicate!</h1><br>
+        <button type="button" id="btn" class="btn btn-outline-light" data-toggle="modal" data-target="#exampleModalCenter">Zuma Sec</button>
+        <button type="button" id="btn" class="btn btn-outline-light" data-toggle="modal" data-target="#exampleModalCenter">Frutas Eduardo</button>
+        <button type="button" id="btn" class="btn btn-outline-light" data-toggle="modal" data-target="#exampleModalCenter">Canarisol</button>
+        <button type="button" id="btn" class="btn btn-outline-light" data-toggle="modal" data-target="#exampleModalCenter">Merkazuma</button>
+    </div>
+
+
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalCenterTitle">Solicitud</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                        <form name="contactform" method="post" action="javascript:;" onsubmit="incidencias()">
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="Empresa">Departamento</label>
+                                        <select class="custom-select" id="Empresa">
+                                                <option selected>Contacta con...</option>
+                                                <option value="1">Recursos Humanos</option>
+                                                <option value="2">Administración</option>
+                                                <option value="3">Dirección</option>
+                                              </select>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="Empresa">Nombre y apellidos</label>
+                                        <input type="text" class="form-control" name="nombre" id="nombre" required>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="Empresa">Correo electronico</label>
+                                        <input type="text" class="form-control" name="email" id="mcorreo" required>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="Empresa">Telefono</label>
+                                        <input type="text" class="form-control" name="telefono" id="telefono" required>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-12">
+                                        <label for="asunto">Asunto de la incidencia</label>
+                                        <input type="text" class="form-control" name="asunto" id="asunto" required>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-12">
+                                        <label for="incidencia">Describe tu incidencia</label>
+                                        <textarea class="form-control" name="comentarios" id="incidencia" rows="3"></textarea>
+                
+                                    </div>
+                                </div>
+                                <input type="submit" value="Enviar"  class="btn btn-outline-secondary">
+                            </form>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"  crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"  crossorigin="anonymous"></script>
+</html>
