@@ -23,7 +23,19 @@ body {
     margin: auto;
     /* border: 1px solid #aaa; */
    }
-   #btn{
+   #btnzms{
+    margin: 5px;
+    width: 200px;
+}
+#btncns{
+    margin: 5px;
+    width: 200px;
+}
+#btnfed{
+    margin: 5px;
+    width: 200px;
+}
+#btnmrk{
     margin: 5px;
     width: 200px;
 }
